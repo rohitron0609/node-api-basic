@@ -1,0 +1,26 @@
+GET http://localhost:3000/subs
+###
+GET http://localhost:3000/subs/60d59274f12a6525d8cd4a8c
+###
+
+POST http://localhost:3000/subs
+Content-Type: application/json
+
+{
+    "name": "Person3",
+    "subToChannel": "Channel3"
+}
+
+###
+
+DELETE http://localhost:3000/subs/60d59468a6efa324ace96403
+
+###
+Patch http://localhost:3000/subs/60d592a7f12a6525d8cd4a91
+Content-Type: application/json
+
+{
+    "name": "update kar dia"
+}
+
+
